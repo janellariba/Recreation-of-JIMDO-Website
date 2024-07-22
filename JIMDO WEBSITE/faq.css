@@ -1,0 +1,94 @@
+body{
+  background-color:white;
+}
+
+.responsive-footer {
+  padding: 64px 0px;
+}
+
+.responsive-footer .container {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(6, 1fr);
+  margin: auto;
+  width: auto;
+  height: auto;
+  gap: 40px;
+}
+
+.responsive-footer.content-wrapper-title {
+  grid-row: span 1;
+  grid-column: span 7;
+}
+
+.responsive-footer.content-wrapper-list {
+  grid-row: span 1;
+  grid-column: 1 / 7;
+}
+
+.responsive-footer li {
+  list-style: none;
+}
+
+.responsive-footer button {
+  cursor: pointer;
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color:white;
+  border-width: 1px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* margin: 16px; */
+}
+
+
+.responsive-footer h3 {
+  /* line-height: 150%; */
+  font-size: 16px;
+  font-weight: 500;
+  padding: 16px 0px;
+  margin: 0px;
+}
+
+.responsive-footer span {
+  padding: 0px 0px 0px 12px;
+}
+
+.responsive-footer .answer {
+  visibility: hidden;
+  overflow: hidden;
+  max-height: 0;
+  padding: 0px 0px 20px;
+  transition: max-height 0.5s ease;
+}
+
+.responsive-footer h2{
+  font-weight: 400;
+  text-align: center;
+}
+
+.responsive-footer p {
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 70%;
+  padding: 16px 0px 0px;
+}
+
+.responsive-footer .faq-list.active .answer {
+  visibility: visible;
+  max-height: 300px;
+}
+
+.responsive-footer .faq-list.active svg {
+  transform: rotate(180deg);
+}
+
+.responsive-footer svg {
+  transition: transform 0.2s ease-in;
+}
+
